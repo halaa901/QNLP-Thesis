@@ -9,12 +9,22 @@
 #       pos_triplet is a reflection of the sentence 
 #       both pos_triplet and neg_triplet would have a balanced for True/False
 
+
+#                 NOTE:
+# There is an balance to be found between the count_threshold and the vocabulary for the sentence
+#  8 Threshold -> 33 words -> 220 sentences 
+#  10 Threshold -> 27 words -> 190 sentences 
+
+#  increase Threshold -> decrease word count -> decrease sentences
+
 #######################################################
 
 # Imports
 import pandas as pd
 import os
 from collections import Counter
+import numpy as np
+import matplotlib.pyplot as plt
 
 # Functions 
 def tokenize(text):
@@ -79,7 +89,21 @@ def display_batch(dataframe, counter):
     print(f"* Batch {counter} of sample sentences * ")
     print("=======================")
     print(f"Number of sentenced:  {dataframe.shape[0]}")
+    print(f" {len(temp_pos)} frequent words:")
     print(f" Positive word count: \n {temp_pos}\n")
+
+    # Convert the Counter object to a dictionary
+    word_freq = dict(temp_pos)  # Get the top 10 most common words
+
+    # Plotting
+    plt.figure(figsize=(10, 5))
+    plt.bar(word_freq.keys(), word_freq.values())
+    plt.xlabel('Words')
+    plt.ylabel('Frequencies')
+    plt.title('Distribution')
+    plt.xticks(rotation=45)
+    plt.show()
+
     # print(f" Negative word count: \n {temp_neg}")
     print("\n")
 
@@ -183,13 +207,17 @@ def main():
     df = df_frequent_1.iloc[rows_to_add].copy()
 
     count = 0 
+    min_threshold = 10
     num_sentences = df.shape[0]
-    while num_sentences > 250 :
-        index_to_remove = filter(df, 8)
+    while num_sentences > 200 and count < 10:
+        index_to_remove = filter(df, min_threshold)
         df = df.drop(index_to_remove)
         # display_batch(df, count)
         num_sentences = df.shape[0]
         count += 1
+
+        if count == 10:
+            print("Manually Terminated")
 
     display_batch(df, count)
 
