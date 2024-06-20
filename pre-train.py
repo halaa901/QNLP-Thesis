@@ -221,7 +221,7 @@ def main():
 
     display_batch(df, count)
 
-    file_path = os.path.join(os.getcwd(), "database.csv")
+    file_path = os.path.join(os.getcwd(), "v2_database.csv")
     df.to_csv(file_path, index=False)
 
     print("* Saving New Databse * ")
