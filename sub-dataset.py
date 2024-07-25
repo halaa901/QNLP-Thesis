@@ -207,7 +207,7 @@ def main():
     df = df_frequent_1.iloc[rows_to_add].copy()
 
     count = 0 
-    min_threshold = 10
+    min_threshold = 4
     num_sentences = df.shape[0]
     while num_sentences > 200 and count < 10:
         index_to_remove = filter(df, min_threshold)
@@ -218,10 +218,11 @@ def main():
 
         if count == 10:
             print("Manually Terminated")
+            break
 
     display_batch(df, count)
 
-    file_path = os.path.join(os.getcwd(), "v2_database.csv")
+    file_path = os.path.join(os.getcwd(), "database_v2.csv")
     df.to_csv(file_path, index=False)
 
     print("* Saving New Databse * ")
