@@ -4,8 +4,45 @@ from torch import nn
 from torchvision.models import ResNet50_Weights
 from torch.utils.data import DataLoader, Dataset
 import torch.nn.functional as F
+from torchvision import transforms
 
-from sklearn.model_selection import train_test_split
+import numpy as np
+
+import pandas as pd
+from PIL import Image
+
+import os
+import sys
+import io
+from io import BytesIO
+import requests
+
+class ImageDataset(Dataset):
+    def __init__(self, image_urls, transform = None):
+        self.image_urls = image_urls
+        self.transform = transform
+
+    def __len__(self):
+        return len(self.image_urls)
+
+    def __getitem__(self, idx):
+        # print(f"Index: {idx}")
+        url = self.image_urls[idx]
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            image = Image.open(BytesIO(response.content)).convert('RGB')
+            # print(" Image loaded successfully.")
+        except Exception as e:
+            print(f" Error loading image at {url}: {e}")
+            return None
+
+        if self.transform:
+            # print("Applying transform...")
+            image = self.transform(image)
+            # print(" Transformation applied.")
+
+        return image
 
 # Modify the model to output a 16-dimensional feature vector
 class Custom16(nn.Module):
@@ -22,145 +59,87 @@ class Custom16(nn.Module):
         x = self.fc(x)
         return x
 
-class CustomDataset(Dataset):
-    def __init__(self, image_urls, labels, transform=None):
-        self.image_urls = image_urls
-        self.labels = labels
-        self.transform = transform
+def feature_vec(dataset, model):
+    feature_list = []
+    with torch.no_grad():  # No need to track gradients during inference
+        for index in range(len(dataset)):
+            image = dataset[index]  # Get image from dataset
+            if image is not None:
+                image = image.unsqueeze(0)  # Add batch dimension (1, C, H, W)
+                image = image.to(device)  # Move image to the same device as the model
+                features = model(image)  # Extract features
+                # print(features)
+                feature_list.append(features.cpu().numpy())  # Move features to CPU and convert to numpy array
+    return feature_list
 
-    def __len__(self):
-        return len(self.image_urls)
+if __name__ == "__main__":
 
-    def __getitem__(self, idx):
-        # Download image from URL
-        try:
-            response = requests.get(self.image_urls[idx])
-            response.raise_for_status()
-            image = Image.open(BytesIO(response.content)).convert('RGB')
-        except Exception as error:
-            print("Failed to download -> ", error)
-        
-        # Apply transformations if any
-        if self.transform:
-            image = self.transform(image)
-        
-        # Get label
-        label = torch.tensor(self.labels[idx], dtype=torch.float32)
-        return image, label
+    print("(*) Imports downloded.\n")
 
+    # ========================================================
+    # PREPARE THE DATASET 
+    # - download the image urls (they can all be downloaded)
+    # - transform the images to desirable format
+    # ========================================================
 
-# ===========================================================
-# ===========================================================
-print("Prepare Dataset")
+    transform = transforms.Compose([
+        transforms.Resize((224, 224)),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    ])
 
-file_path = os.path.join(os.getcwd(), "database.csv")
-df = pd.read_csv(file_path)
+    print("Retreiving the dataset")
+    file_path = os.path.join(os.getcwd(), "clean_dataset.csv")
+    df = pd.read_csv(file_path)
+    image_pos_urls = df['image_1']
+    image_neg_urls = df['image_2']
 
-# Extract the sentence
-sentence = df['sentence']
-image_pos = df['pos_url']
-image_neg = df['neg_url']
+    print("Processing images pos and neg")
+    dataset_pos = ImageDataset(image_urls=image_pos_urls, transform=transform)
+    dataset_neg = ImageDataset(image_urls=image_neg_urls, transform=transform)
 
-df = pd.DataFrame({
-    'sentence': sentence,
-    'image_pos': image_pos,
-    'image_neg': image_neg})
+    print("\n(*) Complete download for positive and negative images. ")
 
-df['label_image1'] = 0
-df['label_image2'] = 1
+    # ========================================================
+    # INITIALIZE THE MODEL
+    #  - call a custom ResnNet model
+    #  - model removes the final layer and outputs a 16 length feature vector
+    # ========================================================
 
-# Define transformations
-transform = transforms.Compose([
-    transforms.Resize((224, 224)),  # Resize images to 224x224
-    transforms.ToTensor(),          # Convert images to tensors
-    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # Normalize with ImageNet stats
-])
+    # Load the pre-trained ResNet model
+    resnet = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
 
-# Example paths and labels (in practice, gather from your dataset)
-image_urls_train = df["image_pos"]
-labels_train = df["label_image1"]
+    # Instantiate the custom model
+    model = Custom16()
+    model.eval() 
 
-image_urls_train, image_urls_val = train_test_split(df["image_pos"], test_size=0.2, random_state=42)
+    # Move model to GPU if available
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    model.to(device)
 
+    print("\n(*) Loaded the pre-trained ResNet custom model. \n")
 
-# Instantiate datasets
-train_dataset = CustomDataset(image_urls=image_urls_train, labels=labels_train, transform=transform)
-val_dataset = CustomDataset(image_urls=image_urls_val, labels=labels_val, transform=transform)
+    # ========================================================
+    # EXTRACT FEATURES
+    #  - loop thorugh each entry and store the 16 feature vector into a new csv file. 
+    # ========================================================
 
-# Create DataLoaders
-train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True, num_workers=4)
-val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False, num_workers=4)
+    # Copy the dataframe to overwrite the feature vectors
+    df_copy = df.copy()
 
-# ===========================================================
-# ===========================================================
-print("Load Resnet Model")
+    print("Extracting feature vector for positive images ..")
+    features_pos = feature_vec(dataset_pos, model)
+    features_pos = np.vstack(features_pos)
 
-# Load the pre-trained ResNet model
-resnet = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
+    print("Extracting feature vector for negative images ..")
+    features_neg = feature_vec(dataset_neg, model)
+    features_neg = np.vstack(features_neg)
 
-# Instantiate the custom model
-model = Custom16()
+    print("All features successfully stored:\n", features_pos)
 
-# Add the classification layer for binary output
-classifier = nn.Sequential(nn.Linear(16, 1), nn.Sigmoid())
+    df_copy['image_1'] = features_pos.tolist() 
+    df_copy['image_2'] = features_neg.tolist() 
 
-# Combine the feature extractor and the classifier
-full_model = nn.Sequential(model, classifier)
-
-# Set model to training mode
-full_model.train()
-
-# ===========================================================
-# ===========================================================
-print("Define Loss function")
-
-# Define loss function and optimizer
-criterion = nn.BCELoss()  # Or BCEWithLogitsLoss without sigmoid in the classifier
-optimizer = torch.optim.Adam(full_model.parameters(), lr=0.001)
-
-# If using GPU
-# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-# full_model.to(device)
-
-# ===========================================================
-# ===========================================================
-print("Training Loop")
-
-# Assuming 'train_dataset' and 'val_dataset' are instances of CustomDataset
-train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
-val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
-
-num_epochs = 10
-for epoch in range(num_epochs):
-    full_model.train()
-    running_loss = 0.0
-    for inputs, labels in train_loader:
-        inputs, labels = inputs.to(device), labels.to(device)
-        
-        optimizer.zero_grad()
-        outputs = full_model(inputs)
-        loss = criterion(outputs, labels.unsqueeze(1))
-        loss.backward()
-        optimizer.step()
-        
-        running_loss += loss.item()
-    
-    print(f'Epoch {epoch+1}/{num_epochs}, Loss: {running_loss/len(train_loader)}')
-
-# ===========================================================
-# ===========================================================
-print("Validation")
-
-# Validation
-full_model.eval()
-val_loss = 0.0
-with torch.no_grad():
-    for inputs, labels in val_loader:
-        inputs, labels = inputs.to(device), labels.to(device)
-        outputs = full_model(inputs)
-        loss = criterion(outputs, labels.unsqueeze(1))
-        val_loss += loss.item()
-
-print(f'Validation Loss: {val_loss/len(val_loader)}')
-
-
+    # Save the updated DataFrame to a new CSV
+    df_copy.to_csv('features_dataset_1.csv', index=False)
+    print("Dataframe store as dataset_vector.csv")
