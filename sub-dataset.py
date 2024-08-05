@@ -25,6 +25,7 @@ import os
 from collections import Counter
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
 # Functions 
 def tokenize(text):
@@ -42,7 +43,6 @@ def frequncy_counter(dataframe, column):
     # for word, count in word_counter.most_common():
     #     print(f"{word}: {count}")
     return word_counter
-
 
 def filter(dataframe, threshold):
 
@@ -95,14 +95,32 @@ def display_batch(dataframe, counter):
     # Convert the Counter object to a dictionary
     word_freq = dict(temp_pos)  # Get the top 10 most common words
 
+    # Specify the folder path and file name
+    folder_path = os.path.join(os.getcwd(), "Dataset")
+    plot_file_name = "distribution_plot.png"
+
+    # Ensure the folder exists
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    # Construct the file path for the plot
+    plot_file_path = os.path.join(folder_path, plot_file_name)
+
     # Plotting
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(15, 8))
     plt.bar(word_freq.keys(), word_freq.values())
     plt.xlabel('Words')
     plt.ylabel('Frequencies')
     plt.title('Distribution')
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=60)
+
+    # Save the plot to the specified file path
+    plt.savefig(plot_file_path)
+    print(f"Plot saved as: {plot_file_name}")
+
     plt.show()
+
+    plt.close()
 
     # print(f" Negative word count: \n {temp_neg}")
     print("\n")
@@ -148,12 +166,14 @@ def main():
     word_counter_1 = frequncy_counter(df, "pos_triplet")
     # word_counter_1b = frequncy_counter(df, "neg_triplet")
     # word_counter_1 = word_counter_1a + word_counter_1b
-
-    threshold = 400   # threshold for repeating vocabulary
+    # #######################
+    threshold = 200   # threshold for repeating vocabulary (was 400)
+    # #######################
     frequent_words = {word for word, count in word_counter_1.items() if count >= threshold}     # Identify frequent words >= threshold
 
 
     print("* Frequent words * ")
+    print(f" (threshold : {threshold})")
     print("=======================")
     print(f" {len(frequent_words)} frequent words:\n {frequent_words}")
     print("\n")
@@ -183,8 +203,9 @@ def main():
     # ================================
     # PICK 10 SENTENCES FROM EACH WORD
     # ================================
-
+    # #######################
     threshold = 10
+    # #######################
     rows_to_add = []    # rows to add to the new dataframe
     word_count = 0
 
@@ -207,9 +228,16 @@ def main():
     df = df_frequent_1.iloc[rows_to_add].copy()
 
     count = 0 
-    min_threshold = 4
+    # #######################
+    min_threshold = 7
+    # #######################
     num_sentences = df.shape[0]
-    while num_sentences > 200 and count < 10:
+    temp_number = 300
+
+    print(f"Number of sentenced before filtering is {num_sentences}")
+
+    while num_sentences > temp_number and count < 10:
+        print(".")
         index_to_remove = filter(df, min_threshold)
         df = df.drop(index_to_remove)
         # display_batch(df, count)
@@ -222,17 +250,32 @@ def main():
 
     display_batch(df, count)
 
-    file_path = os.path.join(os.getcwd(), "sub-dataset_1.csv")
+    # Specify the folder path and file name
+    folder_path = os.path.join(os.getcwd(), "Dataset")
+    file_name = "sub-dataset_1.csv"
+    file_path = os.path.join(folder_path, file_name)
+
+    # Check if the folder exists, if not, create it
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    # Save the DataFrame to the specified file path
     df.to_csv(file_path, index=False)
 
     print("* Saving New Databse * ")
     print("=======================")
-    print("file saved")
+    print(f"File saved to: {file_path}")
+
+    # file_path = os.path.join(os.getcwd(), "sub-dataset_1.csv")
+    # df.to_csv(file_path, index=False)
+
+    # print("* Saving New Databse * ")
+    # print("=======================")
+    # print("file saved")
 
 
-
-
-main()
+if __name__ == "__main__":
+    main()  
 
 
 
