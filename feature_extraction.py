@@ -47,10 +47,16 @@ class ImageDataset(Dataset):
 # Modify the model to output a 16-dimensional feature vector
 class Custom16(nn.Module):
     def __init__(self):
+        # super(Custom16, self).__init__()
+        # self.resnet = nn.Sequential(*list(resnet.children())[:-2])  # Keep layers except the last ones
+        # self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        # self.fc = nn.Linear(2048, 16)
+
         super(Custom16, self).__init__()
+        resnet = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
         self.resnet = nn.Sequential(*list(resnet.children())[:-2])  # Keep layers except the last ones
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Linear(2048, 16)
+        self.fc = nn.Linear(resnet.fc.in_features, 16)
 
     def forward(self, x):
         x = self.resnet(x)
@@ -88,8 +94,15 @@ if __name__ == "__main__":
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
 
+    # Specify the folder and file name
+    folder_name = "Clean-Datasets"
+    file_name = "clean_dataset_3.csv"
+
+    # Construct the file path
+    file_path = os.path.join(os.getcwd(), folder_name, file_name)
+
     print("Retreiving the dataset")
-    file_path = os.path.join(os.getcwd(), "clean_dataset.csv")
+    # file_path = os.path.join(os.getcwd(), "clean_dataset.csv")
     df = pd.read_csv(file_path)
     image_pos_urls = df['image_1']
     image_neg_urls = df['image_2']
@@ -106,8 +119,8 @@ if __name__ == "__main__":
     #  - model removes the final layer and outputs a 16 length feature vector
     # ========================================================
 
-    # Load the pre-trained ResNet model
-    resnet = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
+    # Load the pre-trained ResNet model -> defined in custom16()
+    # resnet = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
 
     # Instantiate the custom model
     model = Custom16()
@@ -140,6 +153,22 @@ if __name__ == "__main__":
     df_copy['image_1'] = features_pos.tolist() 
     df_copy['image_2'] = features_neg.tolist() 
 
+    # Specify the folder path and file name
+    folder_path = os.path.join(os.getcwd(), "Features-Datasets")
+    file_name = "features_dataset_3.csv"
+    file_path = os.path.join(folder_path, file_name)
+
+    # Check if the folder exists, if not, create it
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    # Save the DataFrame to the specified file path
+    df_copy.to_csv(file_path, index=False)
+
+    print("* Saving New Databse * ")
+    print("=======================")
+    print(f"File saved to: {file_path} as {file_name}")
+
     # Save the updated DataFrame to a new CSV
-    df_copy.to_csv('features_dataset_1.csv', index=False)
-    print("Dataframe store as dataset_vector.csv")
+    # df_copy.to_csv('features_dataset_1.csv', index=False)
+    # print("Dataframe store as features_dataset_1.csv")

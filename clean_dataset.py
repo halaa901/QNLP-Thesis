@@ -38,7 +38,15 @@ def download_image(index, url, indexToRemove):
         indexToRemove.append(index)
 
 def main():
-    file_path = os.path.join(os.getcwd(), "dataset.csv")
+
+    # Specify the folder and file name
+    folder_name = "Dataset"
+    file_name = "subdataset_3.csv"
+
+    # Construct the file path
+    file_path = os.path.join(os.getcwd(), folder_name, file_name)
+
+    # file_path = os.path.join(os.getcwd(), "dataset.csv")
     df = pd.read_csv(file_path)
 
     # Extract the sentence
@@ -83,9 +91,27 @@ def main():
             df = df.drop(index = index)
 
     # Save the DataFrame to a CSV file
-    file_path = 'clean_dataset.csv'
+    # file_path = 'clean_dataset.csv'
+    # df.to_csv(file_path, index=False)
+    # print("File saved as clean_dataset.csv")
+
+
+    # Specify the folder path and file name
+    folder_path = os.path.join(os.getcwd(), "Clean-Datasets")
+    file_name = "clean_dataset_3.csv"
+    file_path = os.path.join(folder_path, file_name)
+
+    # Check if the folder exists, if not, create it
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    # Save the DataFrame to the specified file path
     df.to_csv(file_path, index=False)
-    print("File saved as clean_dataset.csv")
+
+    print("* Saving New Databse * ")
+    print("=======================")
+    print(f"File saved to: {file_path} to {folder_path}")
 
 
-main()
+if __name__ == "__main__":
+    main()  

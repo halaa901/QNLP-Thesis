@@ -97,7 +97,7 @@ def display_batch(dataframe, counter):
 
     # Specify the folder path and file name
     folder_path = os.path.join(os.getcwd(), "Dataset")
-    plot_file_name = "distribution_plot.png"
+    plot_file_name = "distribution_3.png"
 
     # Ensure the folder exists
     if not os.path.exists(folder_path):
@@ -229,22 +229,23 @@ def main():
 
     count = 0 
     # #######################
-    min_threshold = 7
+    min_threshold = 15
     # #######################
     num_sentences = df.shape[0]
-    temp_number = 300
+    temp_number = 250
+    temp_count = 1000
 
     print(f"Number of sentenced before filtering is {num_sentences}")
 
-    while num_sentences > temp_number and count < 10:
-        print(".")
+    while num_sentences > temp_number and count < temp_count:
+        # print(".")
         index_to_remove = filter(df, min_threshold)
         df = df.drop(index_to_remove)
         # display_batch(df, count)
         num_sentences = df.shape[0]
         count += 1
 
-        if count == 10:
+        if count == temp_count:
             print("Manually Terminated")
             break
 
@@ -252,7 +253,7 @@ def main():
 
     # Specify the folder path and file name
     folder_path = os.path.join(os.getcwd(), "Dataset")
-    file_name = "sub-dataset_1.csv"
+    file_name = "subdataset_3.csv"
     file_path = os.path.join(folder_path, file_name)
 
     # Check if the folder exists, if not, create it
