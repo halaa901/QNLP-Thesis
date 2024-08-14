@@ -154,6 +154,17 @@ def main():
     print(f"Number of rows to be deleted: {rows_to_delete.sum()}")
     print("\n")
 
+    # =======================
+    # KEEP ONLY VERB DIFF
+    # =======================
+    filtered_df = df[df['verb_neg'] == True]
+    df = filtered_df.reset_index(drop=True)
+
+    print("* Only kept values when verb is changed * ")
+    print("=======================")
+    print(f"Number of rows remaining: {len(df)}")
+    print("\n")
+
 
     # =====================================================================================
     #                               GET THE 200 SENTENCES
@@ -229,7 +240,7 @@ def main():
 
     count = 0 
     # #######################
-    min_threshold = 15
+    min_threshold = 10
     # #######################
     num_sentences = df.shape[0]
     temp_number = 250
