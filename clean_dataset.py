@@ -24,6 +24,7 @@ import os
 
 # Function to download an image
 def download_image(index, url, indexToRemove):
+    print(f"index : {index}")
     try:
         response = requests.get(url)
         response.raise_for_status()  # Check if the request was successful
