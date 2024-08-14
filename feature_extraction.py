@@ -56,7 +56,8 @@ class Custom16(nn.Module):
         resnet = models.resnet50(weights=ResNet50_Weights.IMAGENET1K_V1)
         self.resnet = nn.Sequential(*list(resnet.children())[:-2])  # Keep layers except the last ones
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Linear(resnet.fc.in_features, 16)
+        # self.fc = nn.Linear(resnet.fc.in_features, 16)
+        self.fc = nn.Linear(resnet.fc.in_features, 40)
 
     def forward(self, x):
         x = self.resnet(x)
@@ -155,7 +156,7 @@ if __name__ == "__main__":
 
     # Specify the folder path and file name
     folder_path = os.path.join(os.getcwd(), "Features-Datasets")
-    file_name = "features_dataset_3.csv"
+    file_name = "features_dataset_3_(40).csv"
     file_path = os.path.join(folder_path, file_name)
 
     # Check if the folder exists, if not, create it
