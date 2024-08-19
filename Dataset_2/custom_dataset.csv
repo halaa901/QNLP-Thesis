@@ -1,0 +1,130 @@
+sentence_pos,sentence_neg,image,label_pos,label_neg
+Cat chases mouse, Mouse chases cat, cat_chase_mouse.jpg, 0,1
+Lion chases zebra, Zebra chases lion, lion_chase_zebra.png, 0,1
+Cheetah chases gazelle, Gazelle chases cheetah, cheetah_chase_gazelle.png, 0,1
+Dog chases cat, Cat chases dog, dog_chase_cat.png, 0,1
+Horse chases sheep, Sheep chases horse, horse_chase_sheep.png, 0,1
+Fox chases rabbit, Rabbit chases fox, fox_chases_rabbit.png, 0,1
+Polar bear chases seal, Seal chases polar bear, bear_chases_seal.png, 0,1
+Bear chases girl, Girl chases bear, bear_chases_girl.png, 0,1
+Police chases man, Man chases police, police_chases_man.png, 0,1
+Dog chases boy, Boy chases dog, dog_chases_boy.jpg, 0,1
+Child chases dog, Dog chases child, child_chases_dog.png, 0,1
+Man opens door for lady, Lady opens door for man, man_opensdoor_woman.png,0,1
+Man follows woman, Woman follows man, man_follows_woman.jpg, 0,1
+Elephant follows lion, Lion follows elephant, elephant_follows_lion.png, 0,1
+Tourist follows guide, Guide follows tourists, tourists_follow_guide.png, 0,1
+Dog follows man, Man follows dog, dog_follows_man.png, 0,1
+Man follows dog, Dog follows man, man_follows_dog.png, 0,1
+Child follows parent, Parent follows child, child_follows_parent.png, 0,1
+Parent follows child, Child follows parent, parents_follow_child.png, 0,1
+Father follows son, Son follows father, father_follows_son.png, 0,1
+Child follows man, Man follows child, child_follow_man.png, 0,1
+Dog follows man, Man follows dog, dog_follow_owner.png, 0,1
+Dog runs towards man, Man runs towards dog, dog_runs_man.png, 0,1
+Woman cooks for man, Man cooks for woman, woman_cooks_man.png, 0,1
+Athlete runs twoards coach, Coach runs towards athelete, athlete_run_coach.jpeg, 0,1
+Student asks teacher question, Teacher asks student question, student_asks_teacher.png, 0,1
+Man proposes to woman, Woman proposed to man, man_proposes_woman.png, 0,1
+Woman proposes to man, Man proposes to woman, woman_proposes_man.png, 0,1
+Husband serves food for wife, Wife serves food for husband, husband_serves_woman.png, 0,1
+Reporter smiles at man, Man smiels at reporter, reporter_smiles_man.png, 0,1
+Teacher smiles at student, Student smiles at teacher, teacher_smiles_student.png, 0,1
+Doctor smiles at patient, Patient smiles at doctor, doctor_smile_patient.png, 0,1
+Waitress serves customers, Customers serve waitress, waitress_serves_customer.png, 0,1
+Man fixes womans car, Woman fixes mans car, man_fixes_woman.png, 0,1
+Woman opens door for man, Man opens door fow woman, woman_opens_man.png, 0,1
+Woman helps man, Man helps woman, woman_helps_man.png, 0,1
+Girl helps boy, Boy helps girl, girl_helps_boy.png, 0,1
+Woman helps old lady cross the street, Old lady help woman cross the street, woman_helps_oldlady.png, 0,1
+People help boy clinb mountain, Boy helps people climb mountain, people_help_boy.png, 0,1
+Woman helps man, Man helps woman, woman_help_man_ground.png, 0,1
+Man feeds woman, Woman feeds man, man_feeds_woman.png, 0,1
+Woman helps man with his tie, Man helps woman with her tie, woman_dresses_man.png, 0,1
+Man opens door for woman, Woman opens door for man, man_door_woman.png, 0,1
+Teacher shouts at child, Child shouts at teacher, teacher_shouts_child.png, 0,1
+Woman shouts at man, Man shouts at woman, woman_shouts_man.png, 0,1
+Man shouts at woman, Woman shouts at man, man_shouts_woman.png, 0,1
+Woman shouts at policeman, Policeman shouts at man, woman_shouts_policeman.png, 0,1
+Brother shouts at sister, Sister shouts at brother, brother_shouts_sister.png, 0,1
+Woman shouts at dog, Dog shouts at woman, woman_shouts_dog.png, 0,1
+Player shouts at referee, Referee shouts at player, player_shouts_referee.png, 0,1
+Customer shouts at cashier, Cashier shouts at customer, customer_shouts_cashier.png, 0,1
+Officer shouts at suspect, Suspect shouts at officer, officer_shout_suspect.png, 0,1
+Policeman shouts at protestors, Protestors shouts at policeman, policeman_shouts_protester.png, 0,1
+Man shouts at dog, Dog shouts at man, man_shouts_dog.png, 0,1
+Car follows bus, Bus follows car, car_follows_bus.png, 0,1
+Bus follows bicycle, Bicycle follows bus, bus_follows_bike.png
+Mother ties daughters shoes, Daughter ties motherss shoes, mother_ties_daughter.jpg, 0,1
+Boy ties sisters shoes, Sister ties boys shoes, boy_ties_sister.png, 0,1
+Woman ties boys shoes, Boy ties womans shoes, woman_ties_boys.png, 0,1
+Mother braids daughter hair, Daughter braids mother hair, mother_braids_daughter.png, 0,1
+Father braids daughet hair, Daughter braids fathers hair, father_braids_daughet.png, 0,1
+Teacher helps girl, Girl helps teacher, teacher_helps_girl.png, 0,1
+Teacher helps student, Student helps teacher, teacher_helps_student.png, 0,1
+Nurse ties patient's gown, Patient ties nurse's gown, nurse_ties_patient.png, 0,1
+Child helps mother, Mother helps child, child_helps_mother.png, 0,1
+Mother helps daughter, Daughter helps mother, mother_helps_daughter.png, 0,1
+Car follows bicycle , Bicycle follows car, car_follow_bicycle.png, 0,1
+Father pushes child on swings, Child pushes father on swings, father_swings_child.jpg, 0,1
+Father carries baby, Baby carries father, father_carries_baby.png, 0,1
+Mother carries baby, Baby carries mother, mother_carries_baby.png, 0,1
+Mothers carry babies, Babies carry mothers, mother_carry_baby.png, 0,1
+Brother pushes sister, Sister pushes brother, brother_pushes_sister.png, 0,1
+Boy pushes man on swings,Man pushes boy on swings, boy_pushes_man.png, 0,1
+Man pushes girl on swings, Girl pushes man on swings, man_pushes_girl.png, 0,1
+Children push parents on swings, Parents push children on swings, children_push_parents.png, 0,1
+Grandpa puhses grandaughter on swings , Grandaughter pushes grandpa on swings, grandpa_push_grandaughter.png, 0,1
+Husband pushes wife on swings, Wife pushes husband on swings, Husband_pushes_wife.png, 0,1
+Man carries dog, Dog carries man, man_carries_dog.png, 0,1
+Man on bicycle follows bus, Bus follows man on bicycle, man_follow_bus.png, 0,1
+Barber shaves boy's hair, Boy shaves barber's hair, barber_shaves_boy.png, 0,1
+Man cuts boys hair, Boy cuts mans hair, man_cut_boy.png, 0,1
+Mother carries baby, Baby carries mother, mother_hold_baby.png, 0,1
+Woman saves drowing man, Man saves drowming woman, woman_saves_man.png, 0,1
+Man waves at woman, Woman waves at man, man_wave_woman.png, 0,1
+Chef is behind waiter, Waiter is behind chef, chef_behind_waiter.png, 0,1
+Coach is behind athlete, Athlete is behind couch, coach_behing_athlete.png, 0,1
+Teacher is behind student, Student is behind teacher, teacher_behind_student.png, 0,1
+Woman hugs man, Man hugs woman, woman_hugs_man.png, 0,1
+Child hugs dog, Dog hugs child, child_hugs_dog.png, 0,1
+Man waves at woman, Woman waves at man, man_waves_woman2.png, 0,1
+Photographer pictures woman, Woman pictures photographer, photographer_pictures_woman.png, 0,1
+Groom carries bride by the beach, Bride carries groom by the beach, groom_carries_bride.png, 0,1
+Woman punches man, Man punches woman, woman_punches_man.png, 0,1
+Woman boxes man, Man boxes woman, woman_boxes_man.png, 0,1
+Boss shouts at employee, Employee shouts at boss, boss_shouts_employee.png, 0,1
+Man gives woman a gift, Woman gives man a gift, man_gifts_woman.png, 0,1
+Dentist checks patients teeth, Patients check dentists teeth, denstist_check_patient.png, 0,1
+Child check dentists teeth, Dentist checks childs teeth, child_patient_teeth.png, 0,1
+Husband gives present to wife, Wife gives present to husband, husband_present_wife.png, 0,1
+Mother gives gift to daughter, Duaghter gives present to mother, mother_present_daughter.png, 0,1
+Boy bullies girl, Girl bullies boy, boy_bullies_girl.png, 0,1
+Boy bullies girl, Girl bullies boy, boy_pulls_girl.png, 0,1
+Man takes a picture of ladies, Ladies take a picture of a man, man_pictures_ladies.png, 0,1
+Woman carries man, Man carries woman, woman_carrys_man.png, 0,1
+Woman carry men, men carry woman, woman_carry_men.png, 0,1
+Therapist helps crying lady, Crying lady helps therapist, woman_cries_therapist.png, 0,1
+Man cries to therapist, Therapist cries to man, man_cries_therapist.png, 0,1
+Man yells at woman, Woman yells at man, man_yells_woman.png, 0,1
+Man gives flowers to lady, Lady gives flowers to man, man_flower_woman.png, 0,1
+Father punishes child, Child punishes father, father_punishes_child.png, 0,1
+Boy hitting girl, Girl hitting boy, boy_hitting_girl.png, 0,1
+Child pulls mothers hair, Mother pulls childs hair, child_pulls_mother.png, 0,1
+Boys waves at mom, Mom waves ata boy, boy_waves_mom.png, 0,1
+Father follows son, Son follows father, father_follows_son1.png, 0,1
+Child looks at parent, Parent looks at child, child_looks_parent.png, 0,1
+Dada carries baby, Baby carries dad, dad_carry_baby.png, 0,1
+Lion chases prey, Prey chases lion, lion_chase_prey.png, 0,1
+Man helps woman, Woman helps man, man_helps_woman.png, 0,1
+Eldery man helps lady, Lady help eldery man, gentleman_help_lady.png, 0,1
+Mother poinst at daughetr, Daughter points at mother, mother_point_daughter.png, 0,1
+Woman points at crying child, Crying child points at woman, woman_point_child.png, 0,1
+Mother holds crying son, Son holds crying mother, mother_helps_son.png, 0,1
+Children laugh at crying girl, Girl laughs at crying children, children_laugh_girl.png, 0,1
+Cat chases mouse, Mouse chases cat, cat_chase_mouse_1.png, 0,1
+Cat catches mouse, Mouse catches cat, cat_catch_mouse.png, 0,1
+Dog follows owner, Owner follows dog, dog_follow_owner_1.png, 0,1
+Bulldog kisses woman, Woman kisses bulldog, dog_kiss_owner.png, 0,1
+Man carrys unberella for son, Son carrys umberella for man, man_hold_son.png, 0,1
+Man carrys umberella for woman, Woman carrys umberella for man, man_carry_woman_2.png, 0,1
