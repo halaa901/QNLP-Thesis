@@ -1,0 +1,12 @@
+sentence_pos,sentence_neg,image,label_pos,label_neg
+Man helps woman, Woman helps man, man_helps_woman.png, 0,1
+Child helps mother, Mother helps child, child_helps_mother.png, 0,1
+Brother pushes sister, Sister pushes brother, brother_pushes_sister.png, 0,1
+Boy pushes man on swings,Man pushes boy on swings, boy_pushes_man.png, 0,1
+Father pushes child on swings, Child pushes father on swings, father_swings_child.jpg, 0,1
+Mother pushes daughter on swings, Daughter pushes mother on swings, Mother_push_daughter_2.png, 0,1
+Teacher helps student, Student helps teacher, teacher_helps_student.png, 0,1
+Woman smiles at cat, Cat smiles at woman, woman_smile_cat.png, 0,1
+Coach is behind athlete, Athlete is behind coach, coach_behind_athlete.png, 0,1
+Doctor smiles at patient, Patient smiles at doctor, doctor_smile_child.png, 0,1
+Player shouts at referee, Referee shouts at player, player_shouts_referee.png, 0,1

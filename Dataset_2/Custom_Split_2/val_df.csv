@@ -1,0 +1,16 @@
+sentence_pos,sentence_neg,image,label_pos,label_neg
+Police chases man, Man chases police, police_chases_man.png, 0,1
+Dog chases boy, Boy chases dog, dog_chases_boy.jpg, 0,1
+Man follows dog, Dog follows man, man_follows_dog.png, 0,1
+Woman helps man with his tie, Man helps woman with her tie, woman_dresses_man.png, 0,1
+Reporter smiles at man, Man smiles at reporter, reporter_smiles_man.png, 0,1
+Elephant follows lion, Lion follows elephant, elephant_follows_lion.png, 0,1
+Man opens door for woman, Woman opens door for man, man_door_woman.png, 0,1
+Man punches woman, Woman punches man, man_punch_woman.png, 0,1
+Child follows parent, Parent follows child, child_follows_parent.png, 0,1
+Parents run after child, Child runs after parents, parent_run_child.png, 0,1
+Teacher smiles at student, Student smiles at teacher, teacher_smiles_student.png, 0,1
+Woman punches man, Man punches woman, woman_punch_man_2.png, 0,1
+Dog runs towards man, Man runs towards dog, dog_runs_man.png, 0,1
+Daughter runs towards mother, Mother runs towards daughter, daughter_runs_mother.png, 0,1
+Girl helps boy, Boy helps girl, girl_helps_boy.png, 0,1

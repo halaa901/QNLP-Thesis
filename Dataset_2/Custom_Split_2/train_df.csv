@@ -1,0 +1,50 @@
+sentence_pos,sentence_neg,image,label_pos,label_neg
+Dog chases cat, Cat chases dog, dog_chase_cat.png, 0,1
+Lion chases zebra, Zebra chases lion, lion_chase_zebra.png, 0,1
+Cheetah chases gazelle, Gazelle chases cheetah, cheetah_chase_gazelle.png, 0,1
+Horse chases sheep, Sheep chases horse, horse_chase_sheep.png, 0,1
+Fox chases rabbit, Rabbit chases fox, fox_chases_rabbit.png, 0,1
+Polar bear chases seal, Seal chases polar bear, bear_chases_seal.png, 0,1
+Bear chases girl, Girl chases bear, bear_chases_girl.png, 0,1
+Police chases man, Man chases police, police_chases_man.png, 0,1
+Dog chases boy, Boy chases dog, dog_chases_boy.jpg, 0,1
+Child chases dog, Dog chases child, child_chases_dog.png, 0,1
+Man opens door for lady, Lady opens door for man, man_opensdoor_woman.png,0,1
+Man follows woman, Woman follows man, man_follows_woman.jpg, 0,1
+Elephant follows lion, Lion follows elephant, elephant_follows_lion.png, 0,1
+Tourist follows guide, Guide follows tourists, tourists_follow_guide.png, 0,1
+Dog follows man, Man follows dog, dog_follows_man.png, 0,1
+Man follows dog, Dog follows man, man_follows_dog.png, 0,1
+Child follows parent, Parent follows child, child_follows_parent.png, 0,1
+Parent follows child, Child follows parent, parents_follow_child.png, 0,1
+Father follows son, Son follows father, father_follows_son.png, 0,1
+Child follows man, Man follows child, child_follow_man.png, 0,1
+Dog follows man, Man follows dog, dog_follow_owner.png, 0,1
+Dog runs towards man, Man runs towards dog, dog_runs_man.png, 0,1
+Man runs towards dog, Dog runs towards man, man_runs_dog.png, 0,1
+Athlete runs towards coach, Coach runs towards athlete, athlete_run_coach.jpeg, 0,1
+Woman opens door for children, Children open door for woman, teacher_opens_students.png, 0,1
+Man punches woman, Woman punches man, man_punch_woman.png, 0,1
+Woman punches man, Man punches woman, woman_punch_man_2.png, 0,1
+Daughter runs towards mother, Mother runs towards daughter, daughter_runs_mother.png, 0,1
+Boy runs towards grandmother, Grandmother runs towards boy, child_runs_grandparents.png, 0,1
+Reporter smiles at man, Man smiles at reporter, reporter_smiles_man.png, 0,1
+Teacher smiles at student, Student smiles at teacher, teacher_smiles_student.png, 0,1
+Doctor smiles at patient, Patient smiles at doctor, doctor_smile_patient.png, 0,1
+Young boy opens door for woman, Woman opens door for young boy, child_open_woman.png, 0,1
+Woman opens door for man, Man opens door for woman, woman_opens_man.png, 0,1
+Woman helps man, Man helps woman, woman_helps_man.png, 0,1
+Girl helps boy, Boy helps girl, girl_helps_boy.png, 0,1
+Woman helps old lady cross the street, Old lady helps woman cross the street, woman_helps_oldlady.png, 0,1
+People help boy climb mountain, Boy helps people climb mountain, people_help_boy.png, 0,1
+Woman helps man, Man helps woman, woman_help_man_ground.png, 0,1
+Parents run after child, Child runs after parents, parent_run_child.png, 0,1
+Woman helps man with his tie, Man helps woman with her tie, woman_dresses_man.png, 0,1
+Man opens door for woman, Woman opens door for man, man_door_woman.png, 0,1
+Teacher shouts at child, Child shouts at teacher, teacher_shouts_child.png, 0,1
+Woman shouts at man, Man shouts at woman, woman_shouts_man.png, 0,1
+Man shouts at woman, Woman shouts at man, man_shouts_woman.png, 0,1
+Woman shouts at policeman, Policeman shouts at woman, woman_shouts_policeman.png, 0,1
+Brother shouts at sister, Sister shouts at brother, brother_shouts_sister.png, 0,1
+Woman shouts at dog, Dog shouts at woman, woman_shouts_dog.png, 0,1
+Mother holds crying son, Son holds crying mother, mother_helps_son.png, 0,1
