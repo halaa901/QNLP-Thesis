@@ -28,7 +28,7 @@ Woman opens door for children, Children opens door for Woman, teacher_opens_stud
 Man puncehs woman, Woman punches man, man_punch_woman.png, 0,1
 Woman punches man, Man punches woman, woman_punch_man_2.png, 0,1
 Daughter runs towards mother, Mother runs towards daughter, daughter_runs_mother.png, 0,1
-Boy runs towards grandmother, Grandmother runs towards boy, child_runs_grangparents.png, 0,1
+Boy runs towards grandmother, Grandmother runs towards boy, child_runs_grandparents.png, 0,1
 Reporter smiles at man, Man smiels at reporter, reporter_smiles_man.png, 0,1
 Teacher smiles at student, Student smiles at teacher, teacher_smiles_student.png, 0,1
 Doctor smiles at patient, Patient smiles at doctor, doctor_smile_patient.png, 0,1
@@ -83,7 +83,7 @@ Mother carries baby, Baby carries mother, mother_hold_baby.png, 0,1
 Girl runs towards boy, Boy runs towards girl, girl_run_boy.png, 0,1
 Woman smiles at man, Man smiles at woman, woman_smile_man_2.png, 0,1 
 Chef is behind waiter, Waiter is behind chef, chef_behind_waiter.png, 0,1
-Coach is behind athlete, Athlete is behind couch, coach_behing_athlete.png, 0,1
+Coach is behind athlete, Athlete is behind couch, coach_behind_athlete.png, 0,1
 Teacher is behind student, Student is behind teacher, teacher_behind_student.png, 0,1
 Man opens car door for woman, Woman opens care door for man, man_opencar_woman.png, 0,1
 Mother opens door for daughter, Daughter opens door for mother, mother_opendoor_duaghter.png, 0,1
