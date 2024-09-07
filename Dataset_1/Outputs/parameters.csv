@@ -1,7 +1,7 @@
-* Parameters *      * Dataset 2*
+* Parameters *      * Dataset 1*
 ------------------------------------------------------------------------------------------
-Batch size = 7
-Epochs = 120
+Batch size = 20
+Epochs = 200
 Seed = 42
 a = 0.02 | c = 0.06 | A = 0.001 *  Epochs
 S = 1 | N = 1 | P = 1 | n_layers = 1 | Image = 5 (20 fVect) | 

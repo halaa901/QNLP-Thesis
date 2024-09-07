@@ -1,0 +1,438 @@
+Functions
+Variables
+Definitions
+NumpyModel
+Initialize the trainer
+Dataset
+
+Training ..
+2024-08-30 22:08:27.612751: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 17.595584s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:20:20.175710: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:20:21.675078: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 11.511167s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:23:21.228653: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:23:21.835417: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 10.612978s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:23:59.014921: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:23:59.955463: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 10.941105s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:24:18.481349: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:24:18.712955: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 10.24158s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:24:37.310626: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:24:37.567837: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 10.26527s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:24:56.254538: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:24:57.538928: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 11.292803s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:25:17.660626: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:25:22.799642: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 15.148177s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:25:51.888579: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 13.929608s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:26:13.957471: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:26:17.891192: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 13.939267s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:26:40.750408: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:26:46.838942: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 16.097627s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:27:09.597650: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:27:15.792087: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 16.196761s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:27:39.828074: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:27:46.962868: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 17.144029s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:28:10.128427: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:28:19.158801: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 19.036477s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:28:45.883696: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:29:06.315497: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 30.437189s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:29:47.653317: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:30:08.905278: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 31.266832s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:30:49.525096: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:32:09.825618: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 1m30.312941s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:32:35.249775: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:32:41.406734: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 16.162082s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:33:02.820348: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:33:05.299520: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 12.481295s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:33:25.799904: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:33:27.724476: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 11.929253s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:33:47.814635: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:33:53.698673: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 15.884859s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:34:16.404797: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:34:18.139049: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 11.739664s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:34:39.211498: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:34:40.188509: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 10.977654s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:34:59.406425: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:35:00.574720: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 11.173708s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:40:09.168677: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 16.302179s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:41:47.633689: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+2024-08-30 22:42:22.600106: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 1m48.805173s
+
+********************************
+[Compiling module jit_diagram_output] Slow compile? XLA was built without compiler optimizations, which can be slow. Try rebuilding with -c opt.
+********************************
+Epoch 1:    train/loss: 0.9329   valid/loss: 1.1163   train/acc: 0.5000   valid/acc: 0.5000
+Epoch 2:    train/loss: 0.9694   valid/loss: 0.8023   train/acc: 0.5620   valid/acc: 0.6731
+Epoch 3:    train/loss: 1.5510   valid/loss: 1.0084   train/acc: 0.4876   valid/acc: 0.5769
+Epoch 4:    train/loss: 1.1868   valid/loss: 1.0920   train/acc: 0.5992   valid/acc: 0.5769
+Epoch 5:    train/loss: 1.0952   valid/loss: 0.9005   train/acc: 0.5785   valid/acc: 0.5577
+Epoch 6:    train/loss: 1.3270   valid/loss: 1.0003   train/acc: 0.5496   valid/acc: 0.4808
+Epoch 7:    train/loss: 0.3107   valid/loss: 0.9777   train/acc: 0.5496   valid/acc: 0.5577
+Epoch 8:    train/loss: 0.8098   valid/loss: 0.9512   train/acc: 0.6198   valid/acc: 0.5192
+Epoch 9:    train/loss: 1.0054   valid/loss: 0.8618   train/acc: 0.5661   valid/acc: 0.5577
+Epoch 10:   train/loss: 0.4536   valid/loss: 0.9715   train/acc: 0.5744   valid/acc: 0.5769
+Epoch 11:   train/loss: 0.4725   valid/loss: 0.8712   train/acc: 0.5413   valid/acc: 0.6154
+Epoch 12:   train/loss: 0.4288   valid/loss: 0.7907   train/acc: 0.5909   valid/acc: 0.5962
+Epoch 13:   train/loss: 0.6224   valid/loss: 0.8436   train/acc: 0.5868   valid/acc: 0.5962
+Epoch 14:   train/loss: 0.3356   valid/loss: 0.8139   train/acc: 0.5785   valid/acc: 0.5962
+Epoch 15:   train/loss: 0.6270   valid/loss: 0.9181   train/acc: 0.5868   valid/acc: 0.5385
+Epoch 16:   train/loss: 0.2679   valid/loss: 0.9000   train/acc: 0.5661   valid/acc: 0.5962
+Epoch 17:   train/loss: 0.2440   valid/loss: 0.8874   train/acc: 0.6446   valid/acc: 0.5962
+Epoch 18:   train/loss: 0.1043   valid/loss: 0.9174   train/acc: 0.6116   valid/acc: 0.5962
+Epoch 19:   train/loss: 0.9168   valid/loss: 0.9296   train/acc: 0.5248   valid/acc: 0.5769
+Epoch 20:   train/loss: 0.3194   valid/loss: 0.9311   train/acc: 0.5950   valid/acc: 0.5962
+Epoch 21:   train/loss: 0.4047   valid/loss: 0.9115   train/acc: 0.5868   valid/acc: 0.5962
+Epoch 22:   train/loss: 0.3657   valid/loss: 1.0314   train/acc: 0.5785   valid/acc: 0.6154
+Epoch 23:   train/loss: 0.8574   valid/loss: 0.9583   train/acc: 0.5992   valid/acc: 0.6154
+Epoch 24:   train/loss: 0.3622   valid/loss: 1.0006   train/acc: 0.5682   valid/acc: 0.6154
+Epoch 25:   train/loss: 0.6544   valid/loss: 0.9301   train/acc: 0.5826   valid/acc: 0.5962
+Epoch 26:   train/loss: 1.1946   valid/loss: 0.9829   train/acc: 0.6281   valid/acc: 0.5385
+Epoch 27:   train/loss: 0.1189   valid/loss: 0.9637   train/acc: 0.5661   valid/acc: 0.5385
+Epoch 28:   train/loss: 0.9999   valid/loss: 0.8075   train/acc: 0.5620   valid/acc: 0.5769
+Epoch 29:   train/loss: 0.5460   valid/loss: 0.8731   train/acc: 0.5620   valid/acc: 0.5192
+Epoch 30:   train/loss: 2.6393   valid/loss: 0.9310   train/acc: 0.6529   valid/acc: 0.5577
+Epoch 31:   train/loss: 2.1228   valid/loss: 0.8994   train/acc: 0.6033   valid/acc: 0.5385
+Epoch 32:   train/loss: 1.2238   valid/loss: 0.9233   train/acc: 0.6095   valid/acc: 0.5000
+Epoch 33:   train/loss: 1.3849   valid/loss: 0.8759   train/acc: 0.5620   valid/acc: 0.5769
+Epoch 34:   train/loss: 0.7722   valid/loss: 0.9021   train/acc: 0.5620   valid/acc: 0.5769
+Epoch 35:   train/loss: 1.5598   valid/loss: 0.8953   train/acc: 0.6074   valid/acc: 0.5577
+Epoch 36:   train/loss: 1.1092   valid/loss: 0.7719   train/acc: 0.5579   valid/acc: 0.5577
+Epoch 37:   train/loss: 0.2064   valid/loss: 0.7774   train/acc: 0.5868   valid/acc: 0.5577
+Epoch 38:   train/loss: 1.0603   valid/loss: 0.7333   train/acc: 0.5868   valid/acc: 0.5000
+Epoch 39:   train/loss: 0.9666   valid/loss: 0.8010   train/acc: 0.5413   valid/acc: 0.5000
+Epoch 40:   train/loss: 0.9814   valid/loss: 0.8171   train/acc: 0.5661   valid/acc: 0.5192
+Epoch 41:   train/loss: 0.3806   valid/loss: 0.7915   train/acc: 0.6074   valid/acc: 0.5192
+Epoch 42:   train/loss: 0.1260   valid/loss: 0.7746   train/acc: 0.5909   valid/acc: 0.5577
+Epoch 43:   train/loss: 0.6882   valid/loss: 0.7390   train/acc: 0.6116   valid/acc: 0.5769
+Epoch 44:   train/loss: 1.9921   valid/loss: 0.7677   train/acc: 0.6157   valid/acc: 0.5962
+Epoch 45:   train/loss: 2.3912   valid/loss: 0.8060   train/acc: 0.6529   valid/acc: 0.5385
+Epoch 46:   train/loss: 0.8146   valid/loss: 1.0037   train/acc: 0.6074   valid/acc: 0.5962
+Epoch 47:   train/loss: 1.7363   valid/loss: 0.9592   train/acc: 0.6198   valid/acc: 0.5769
+Epoch 48:   train/loss: 0.6586   valid/loss: 0.8543   train/acc: 0.6116   valid/acc: 0.5962
+Epoch 49:   train/loss: 1.2377   valid/loss: 0.8469   train/acc: 0.6570   valid/acc: 0.5769
+Epoch 50:   train/loss: 0.1227   valid/loss: 0.8080   train/acc: 0.5950   valid/acc: 0.5962
+Epoch 51:   train/loss: 0.5491   valid/loss: 0.8033   train/acc: 0.6157   valid/acc: 0.6154
+Epoch 52:   train/loss: 0.2957   valid/loss: 0.7846   train/acc: 0.6364   valid/acc: 0.6346
+Epoch 53:   train/loss: 1.5447   valid/loss: 0.7597   train/acc: 0.5723   valid/acc: 0.6731
+Epoch 54:   train/loss: 0.4570   valid/loss: 0.7517   train/acc: 0.6033   valid/acc: 0.6731
+Epoch 55:   train/loss: 1.1662   valid/loss: 0.7762   train/acc: 0.6033   valid/acc: 0.6346
+Epoch 56:   train/loss: 1.1164   valid/loss: 0.7789   train/acc: 0.6405   valid/acc: 0.6538
+Epoch 57:   train/loss: 1.7471   valid/loss: 0.8142   train/acc: 0.6033   valid/acc: 0.6346
+Epoch 58:   train/loss: 0.9759   valid/loss: 0.7672   train/acc: 0.6198   valid/acc: 0.6154
+Epoch 59:   train/loss: 0.1504   valid/loss: 0.8276   train/acc: 0.6074   valid/acc: 0.6346
+Epoch 60:   train/loss: 0.5530   valid/loss: 0.8135   train/acc: 0.6343   valid/acc: 0.6346
+Epoch 61:   train/loss: 0.6414   valid/loss: 0.8294   train/acc: 0.6446   valid/acc: 0.5962
+Epoch 62:   train/loss: 0.7629   valid/loss: 0.8231   train/acc: 0.6281   valid/acc: 0.5962
+Epoch 63:   train/loss: 1.4217   valid/loss: 0.7972   train/acc: 0.5950   valid/acc: 0.6346
+Epoch 64:   train/loss: 1.2848   valid/loss: 0.8387   train/acc: 0.6405   valid/acc: 0.6346
+Epoch 65:   train/loss: 1.4681   valid/loss: 0.8019   train/acc: 0.6198   valid/acc: 0.5962
+Epoch 66:   train/loss: 0.4799   valid/loss: 0.7987   train/acc: 0.6322   valid/acc: 0.6154
+Epoch 67:   train/loss: 0.8290   valid/loss: 0.7934   train/acc: 0.6281   valid/acc: 0.6154
+Epoch 68:   train/loss: 0.6520   valid/loss: 0.7351   train/acc: 0.6095   valid/acc: 0.6346
+Epoch 69:   train/loss: 0.7365   valid/loss: 0.7381   train/acc: 0.6322   valid/acc: 0.6346
+Epoch 70:   train/loss: 0.4116   valid/loss: 0.7569   train/acc: 0.6198   valid/acc: 0.6346
+Epoch 71:   train/loss: 0.3559   valid/loss: 0.8655   train/acc: 0.6033   valid/acc: 0.6346
+Epoch 72:   train/loss: 1.0685   valid/loss: 0.8044   train/acc: 0.6240   valid/acc: 0.6154
+Epoch 73:   train/loss: 1.1663   valid/loss: 0.7244   train/acc: 0.6446   valid/acc: 0.6538
+Epoch 74:   train/loss: 0.2815   valid/loss: 0.7853   train/acc: 0.6157   valid/acc: 0.6538
+Epoch 75:   train/loss: 0.9756   valid/loss: 0.8277   train/acc: 0.6446   valid/acc: 0.5769
+Epoch 76:   train/loss: 0.8470   valid/loss: 0.8018   train/acc: 0.6446   valid/acc: 0.5769
+Epoch 77:   train/loss: 1.5450   valid/loss: 0.7780   train/acc: 0.5868   valid/acc: 0.6346
+Epoch 78:   train/loss: 0.4818   valid/loss: 0.7856   train/acc: 0.6446   valid/acc: 0.6154
+Epoch 79:   train/loss: 0.2148   valid/loss: 0.8223   train/acc: 0.6364   valid/acc: 0.5769
+Epoch 80:   train/loss: 0.6266   valid/loss: 0.8135   train/acc: 0.6405   valid/acc: 0.6538
+Epoch 81:   train/loss: 0.4077   valid/loss: 0.8337   train/acc: 0.6570   valid/acc: 0.6346
+Epoch 82:   train/loss: 1.2480   valid/loss: 0.7412   train/acc: 0.5785   valid/acc: 0.6538
+Epoch 83:   train/loss: 0.4093   valid/loss: 0.7504   train/acc: 0.6405   valid/acc: 0.6538
+Epoch 84:   train/loss: 0.7239   valid/loss: 0.7578   train/acc: 0.6322   valid/acc: 0.5962
+Epoch 85:   train/loss: 0.3720   valid/loss: 0.7882   train/acc: 0.5992   valid/acc: 0.6731
+Epoch 86:   train/loss: 0.8250   valid/loss: 0.7623   train/acc: 0.6405   valid/acc: 0.6731
+Epoch 87:   train/loss: 0.5258   valid/loss: 0.8015   train/acc: 0.6240   valid/acc: 0.6538
+Epoch 88:   train/loss: 1.8473   valid/loss: 0.8674   train/acc: 0.6488   valid/acc: 0.6154
+Epoch 89:   train/loss: 0.9079   valid/loss: 0.8242   train/acc: 0.6570   valid/acc: 0.6154
+Epoch 90:   train/loss: 0.5751   valid/loss: 0.8384   train/acc: 0.5868   valid/acc: 0.5962
+Epoch 91:   train/loss: 0.8046   valid/loss: 0.8073   train/acc: 0.5992   valid/acc: 0.5769
+Epoch 92:   train/loss: 1.0188   valid/loss: 0.8667   train/acc: 0.6116   valid/acc: 0.5385
+Epoch 93:   train/loss: 0.2740   valid/loss: 0.8663   train/acc: 0.6157   valid/acc: 0.5577
+Epoch 94:   train/loss: 1.0592   valid/loss: 0.9347   train/acc: 0.6157   valid/acc: 0.5385
+Epoch 95:   train/loss: 0.5909   valid/loss: 0.8254   train/acc: 0.5785   valid/acc: 0.6154
+Epoch 96:   train/loss: 1.4069   valid/loss: 0.8175   train/acc: 0.6033   valid/acc: 0.5962
+Epoch 97:   train/loss: 0.2433   valid/loss: 0.9044   train/acc: 0.6405   valid/acc: 0.5769
+Epoch 98:   train/loss: 0.4851   valid/loss: 0.8823   train/acc: 0.6322   valid/acc: 0.5769
+Epoch 99:   train/loss: 0.2097   valid/loss: 0.7658   train/acc: 0.6694   valid/acc: 0.5962
+Epoch 100:  train/loss: 0.6208   valid/loss: 0.7517   train/acc: 0.6198   valid/acc: 0.5769
+Epoch 101:  train/loss: 1.5668   valid/loss: 0.7904   train/acc: 0.6364   valid/acc: 0.6346
+Epoch 102:  train/loss: 0.6091   valid/loss: 0.7924   train/acc: 0.6570   valid/acc: 0.6154
+Epoch 103:  train/loss: 0.3732   valid/loss: 0.7795   train/acc: 0.6570   valid/acc: 0.6154
+Epoch 104:  train/loss: 0.8613   valid/loss: 0.8581   train/acc: 0.5826   valid/acc: 0.5962
+Epoch 105:  train/loss: 1.2419   valid/loss: 0.8770   train/acc: 0.6198   valid/acc: 0.5769
+Epoch 106:  train/loss: 0.6617   valid/loss: 0.8500   train/acc: 0.6116   valid/acc: 0.5962
+Epoch 107:  train/loss: 0.2217   valid/loss: 0.8310   train/acc: 0.6281   valid/acc: 0.6154
+Epoch 108:  train/loss: 0.7347   valid/loss: 0.8114   train/acc: 0.6198   valid/acc: 0.5769
+Epoch 109:  train/loss: 0.2149   valid/loss: 0.8698   train/acc: 0.6281   valid/acc: 0.5769
+Epoch 110:  train/loss: 1.2649   valid/loss: 0.8649   train/acc: 0.5785   valid/acc: 0.5577
+Epoch 111:  train/loss: 0.3919   valid/loss: 0.8194   train/acc: 0.6715   valid/acc: 0.5769
+Epoch 112:  train/loss: 0.2441   valid/loss: 0.7830   train/acc: 0.6570   valid/acc: 0.5962
+Epoch 113:  train/loss: 1.5101   valid/loss: 0.8054   train/acc: 0.6364   valid/acc: 0.5962
+Epoch 114:  train/loss: 0.9573   valid/loss: 0.8229   train/acc: 0.6488   valid/acc: 0.5962
+Epoch 115:  train/loss: 0.4584   valid/loss: 0.8264   train/acc: 0.6446   valid/acc: 0.6346
+Epoch 116:  train/loss: 1.3686   valid/loss: 0.8782   train/acc: 0.6012   valid/acc: 0.6538
+Epoch 117:  train/loss: 0.5440   valid/loss: 0.8872   train/acc: 0.6240   valid/acc: 0.6538
+Epoch 118:  train/loss: 0.4265   valid/loss: 0.8632   train/acc: 0.6488   valid/acc: 0.6346
+Epoch 119:  train/loss: 0.4972   valid/loss: 0.8302   train/acc: 0.6322   valid/acc: 0.6538
+Epoch 120:  train/loss: 0.8862   valid/loss: 0.8455   train/acc: 0.6488   valid/acc: 0.6538
+Epoch 121:  train/loss: 0.7460   valid/loss: 0.8541   train/acc: 0.5950   valid/acc: 0.6538
+Epoch 122:  train/loss: 0.6022   valid/loss: 0.8398   train/acc: 0.6777   valid/acc: 0.6538
+Epoch 123:  train/loss: 1.2137   valid/loss: 0.8408   train/acc: 0.6426   valid/acc: 0.6346
+Epoch 124:  train/loss: 0.9744   valid/loss: 0.8961   train/acc: 0.6240   valid/acc: 0.6154
+Epoch 125:  train/loss: 0.6728   valid/loss: 0.9149   train/acc: 0.6322   valid/acc: 0.6154
+Epoch 126:  train/loss: 0.8186   valid/loss: 0.8974   train/acc: 0.6322   valid/acc: 0.6346
+Epoch 127:  train/loss: 1.1966   valid/loss: 0.8846   train/acc: 0.6405   valid/acc: 0.5962
+Epoch 128:  train/loss: 0.4681   valid/loss: 0.9139   train/acc: 0.6322   valid/acc: 0.5962
+Epoch 129:  train/loss: 0.3446   valid/loss: 0.8927   train/acc: 0.6116   valid/acc: 0.5962
+Epoch 130:  train/loss: 0.8908   valid/loss: 0.7998   train/acc: 0.6240   valid/acc: 0.6346
+Epoch 131:  train/loss: 1.9129   valid/loss: 0.7613   train/acc: 0.6281   valid/acc: 0.6538
+Epoch 132:  train/loss: 0.9577   valid/loss: 0.7886   train/acc: 0.6157   valid/acc: 0.6538
+Epoch 133:  train/loss: 0.5120   valid/loss: 0.8612   train/acc: 0.6446   valid/acc: 0.6154
+Epoch 134:  train/loss: 1.0846   valid/loss: 0.9157   train/acc: 0.6157   valid/acc: 0.6154
+Epoch 135:  train/loss: 0.4847   valid/loss: 0.9161   train/acc: 0.6508   valid/acc: 0.6154
+Epoch 136:  train/loss: 0.7669   valid/loss: 0.8936   train/acc: 0.6198   valid/acc: 0.6154
+Epoch 137:  train/loss: 0.9156   valid/loss: 0.8982   train/acc: 0.5785   valid/acc: 0.6538
+Epoch 138:  train/loss: 0.3805   valid/loss: 0.8537   train/acc: 0.6074   valid/acc: 0.6731
+Epoch 139:  train/loss: 0.8833   valid/loss: 0.8594   train/acc: 0.5992   valid/acc: 0.6346
+Epoch 140:  train/loss: 0.9488   valid/loss: 0.8345   train/acc: 0.6116   valid/acc: 0.6538
+Epoch 141:  train/loss: 0.9072   valid/loss: 0.8291   train/acc: 0.6198   valid/acc: 0.6731
+Epoch 142:  train/loss: 0.3317   valid/loss: 0.8153   train/acc: 0.6157   valid/acc: 0.6731
+Epoch 143:  train/loss: 0.5316   valid/loss: 0.7667   train/acc: 0.6612   valid/acc: 0.6731
+Epoch 144:  train/loss: 0.7450   valid/loss: 0.7371   train/acc: 0.6612   valid/acc: 0.6731
+Epoch 145:  train/loss: 1.1558   valid/loss: 0.7505   train/acc: 0.6446   valid/acc: 0.6538
+Epoch 146:  train/loss: 1.4342   valid/loss: 0.7363   train/acc: 0.6901   valid/acc: 0.6538
+Epoch 147:  train/loss: 0.5157   valid/loss: 0.7877   train/acc: 0.6570   valid/acc: 0.6346
+Epoch 148:  train/loss: 0.7267   valid/loss: 0.7995   train/acc: 0.6570   valid/acc: 0.6731
+Epoch 149:  train/loss: 1.4180   valid/loss: 0.7789   train/acc: 0.6198   valid/acc: 0.6538
+Epoch 150:  train/loss: 1.0996   valid/loss: 0.7371   train/acc: 0.6736   valid/acc: 0.6154
+Epoch 151:  train/loss: 1.4476   valid/loss: 0.7195   train/acc: 0.6116   valid/acc: 0.6346
+Epoch 152:  train/loss: 1.0696   valid/loss: 0.7289   train/acc: 0.6157   valid/acc: 0.6154
+Epoch 153:  train/loss: 1.4102   valid/loss: 0.7230   train/acc: 0.6033   valid/acc: 0.6923
+Epoch 154:  train/loss: 0.2629   valid/loss: 0.7165   train/acc: 0.6240   valid/acc: 0.7115
+Epoch 155:  train/loss: 0.6425   valid/loss: 0.6940   train/acc: 0.6570   valid/acc: 0.7115
+Epoch 156:  train/loss: 0.1964   valid/loss: 0.7035   train/acc: 0.6488   valid/acc: 0.6923
+Epoch 157:  train/loss: 0.2944   valid/loss: 0.7035   train/acc: 0.6653   valid/acc: 0.6923
+Epoch 158:  train/loss: 0.2677   valid/loss: 0.7544   train/acc: 0.6322   valid/acc: 0.7115
+Epoch 159:  train/loss: 0.8911   valid/loss: 0.7357   train/acc: 0.6364   valid/acc: 0.7308
+Epoch 160:  train/loss: 1.6834   valid/loss: 0.7020   train/acc: 0.6570   valid/acc: 0.7308
+Epoch 161:  train/loss: 0.2153   valid/loss: 0.6901   train/acc: 0.6777   valid/acc: 0.7115
+Epoch 162:  train/loss: 0.5604   valid/loss: 0.6763   train/acc: 0.6818   valid/acc: 0.6923
+Epoch 163:  train/loss: 0.6110   valid/loss: 0.6848   train/acc: 0.6777   valid/acc: 0.6731
+Epoch 164:  train/loss: 0.3682   valid/loss: 0.6713   train/acc: 0.6570   valid/acc: 0.7115
+Epoch 165:  train/loss: 0.3725   valid/loss: 0.6637   train/acc: 0.6364   valid/acc: 0.7115
+Epoch 166:  train/loss: 0.0888   valid/loss: 0.6598   train/acc: 0.6322   valid/acc: 0.7115
+Epoch 167:  train/loss: 1.3832   valid/loss: 0.6504   train/acc: 0.6446   valid/acc: 0.6731
+Epoch 168:  train/loss: 0.6741   valid/loss: 0.6374   train/acc: 0.6446   valid/acc: 0.6731
+Epoch 169:  train/loss: 0.5571   valid/loss: 0.6564   train/acc: 0.6570   valid/acc: 0.6731
+Epoch 170:  train/loss: 0.4873   valid/loss: 0.6802   train/acc: 0.7190   valid/acc: 0.6731
+Epoch 171:  train/loss: 1.0366   valid/loss: 0.6590   train/acc: 0.6612   valid/acc: 0.6731
+Epoch 172:  train/loss: 1.6441   valid/loss: 0.6609   train/acc: 0.6901   valid/acc: 0.6923
+Epoch 173:  train/loss: 1.4113   valid/loss: 0.6876   train/acc: 0.6942   valid/acc: 0.6538
+Epoch 174:  train/loss: 0.2307   valid/loss: 0.6960   train/acc: 0.6736   valid/acc: 0.6538
+Epoch 175:  train/loss: 0.6692   valid/loss: 0.6935   train/acc: 0.6364   valid/acc: 0.6731
+Epoch 176:  train/loss: 0.6721   valid/loss: 0.6989   train/acc: 0.6901   valid/acc: 0.6538
+Epoch 177:  train/loss: 0.8681   valid/loss: 0.6984   train/acc: 0.7066   valid/acc: 0.6923
+Epoch 178:  train/loss: 0.2646   valid/loss: 0.6797   train/acc: 0.6777   valid/acc: 0.6923
+Epoch 179:  train/loss: 0.4687   valid/loss: 0.7016   train/acc: 0.6612   valid/acc: 0.6731
+Epoch 180:  train/loss: 0.8469   valid/loss: 0.7659   train/acc: 0.6240   valid/acc: 0.6346
+Epoch 181:  train/loss: 0.3893   valid/loss: 0.7305   train/acc: 0.6446   valid/acc: 0.6346
+Epoch 182:  train/loss: 0.7012   valid/loss: 0.7034   train/acc: 0.7355   valid/acc: 0.6346
+Epoch 183:  train/loss: 0.5104   valid/loss: 0.7046   train/acc: 0.6756   valid/acc: 0.6154
+Epoch 184:  train/loss: 0.5737   valid/loss: 0.7008   train/acc: 0.6818   valid/acc: 0.5577
+Epoch 185:  train/loss: 1.0092   valid/loss: 0.7180   train/acc: 0.6860   valid/acc: 0.6346
+Epoch 186:  train/loss: 0.9731   valid/loss: 0.8094   train/acc: 0.6860   valid/acc: 0.6346
+Epoch 187:  train/loss: 0.2179   valid/loss: 0.7886   train/acc: 0.6694   valid/acc: 0.6154
+Epoch 188:  train/loss: 0.7886   valid/loss: 0.7358   train/acc: 0.6777   valid/acc: 0.6346
+Epoch 189:  train/loss: 1.0178   valid/loss: 0.7340   train/acc: 0.6777   valid/acc: 0.6154
+Epoch 190:  train/loss: 1.1213   valid/loss: 0.7089   train/acc: 0.6798   valid/acc: 0.6346
+Epoch 191:  train/loss: 1.3137   valid/loss: 0.6954   train/acc: 0.6632   valid/acc: 0.6538
+Epoch 192:  train/loss: 0.1703   valid/loss: 0.6844   train/acc: 0.6694   valid/acc: 0.6538
+Epoch 193:  train/loss: 1.0424   valid/loss: 0.6916   train/acc: 0.6570   valid/acc: 0.6154
+Epoch 194:  train/loss: 1.1458   valid/loss: 0.7008   train/acc: 0.6281   valid/acc: 0.6154
+Epoch 195:  train/loss: 1.2757   valid/loss: 0.7108   train/acc: 0.6694   valid/acc: 0.5962
+Epoch 196:  train/loss: 1.1497   valid/loss: 0.7260   train/acc: 0.6240   valid/acc: 0.5385
+Epoch 197:  train/loss: 0.6838   valid/loss: 0.7241   train/acc: 0.6942   valid/acc: 0.5962
+Epoch 198:  train/loss: 0.2735   valid/loss: 0.7202   train/acc: 0.6529   valid/acc: 0.5962
+Epoch 199:  train/loss: 1.1974   valid/loss: 0.7076   train/acc: 0.6488   valid/acc: 0.5769
+Epoch 200:  train/loss: 0.5513   valid/loss: 0.6959   train/acc: 0.6488   valid/acc: 0.5962
+
+Training completed!
+
+
+* Test Results *
+------------------------------
+Accuracy: 60.38%
+------------------------------

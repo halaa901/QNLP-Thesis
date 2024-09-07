@@ -18,21 +18,30 @@ from io import BytesIO
 import requests
 
 class ImageDataset(Dataset):
-    def __init__(self, image_filenames, transform=None, image_folder=None):
-        self.image_filenames = image_filenames
+    def __init__(self, image_urls, transform = None):
+        self.image_urls = image_urls
         self.transform = transform
-        self.image_folder = image_folder
 
     def __len__(self):
-        return len(self.image_filenames)
+        return len(self.image_urls)
 
     def __getitem__(self, idx):
-        img_name = os.path.join(self.image_folder, self.image_filenames[idx])
-        image = Image.open(img_name).convert('RGB')
-        
+        # print(f"Index: {idx}")
+        url = self.image_urls[idx]
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            image = Image.open(BytesIO(response.content)).convert('RGB')
+            # print(" Image loaded successfully.")
+        except Exception as e:
+            print(f" Error loading image at {url}: {e}")
+            return None
+
         if self.transform:
+            # print("Applying transform...")
             image = self.transform(image)
-        
+            # print(" Transformation applied.")
+
         return image
 
 # Modify the model to output a 16-dimensional feature vector
@@ -87,8 +96,8 @@ if __name__ == "__main__":
     ])
 
     # Specify the folder and file name
-    folder_name = "Dataset_2"
-    file_name = "custom_dataset_v2.csv"
+    folder_name = "Dataset_1/Clean-Datasets"
+    file_name = "clean_dataset_3.csv"
 
     # Construct the file path
     file_path = os.path.join(os.getcwd(), folder_name, file_name)
@@ -96,17 +105,14 @@ if __name__ == "__main__":
     print("Retreiving the dataset")
     # file_path = os.path.join(os.getcwd(), "clean_dataset.csv")
     df = pd.read_csv(file_path)
-    df['image'] = df['image'].str[1:]
-    images = df['image']
+    image_pos_urls = df['image_1']
+    image_neg_urls = df['image_2']
 
-    # current_directory = os.getcwd()
-    # print("Current Directory:", current_directory)  
+    print("Processing images pos and neg")
+    dataset_pos = ImageDataset(image_urls=image_pos_urls, transform=transform)
+    dataset_neg = ImageDataset(image_urls=image_neg_urls, transform=transform)
 
-    print("Processing images")
-    image_folder = "Dataset_2/images" 
-    dataset = ImageDataset(image_filenames=images, transform=transform, image_folder=image_folder)
-
-    print("\n(*) Complete download for all images. ")
+    print("\n(*) Complete download for positive and negative images. ")
 
     # ========================================================
     # INITIALIZE THE MODEL
@@ -135,18 +141,27 @@ if __name__ == "__main__":
     # Copy the dataframe to overwrite the feature vectors
     df_copy = df.copy()
 
-    print("Extracting feature vector for images ..")
-    features_ = feature_vec(dataset, model)
-    features = np.vstack(features_)
+    print("Extracting feature vector for positive images ..")
+    features_pos = feature_vec(dataset_pos, model)
+    features_pos = np.vstack(features_pos)
 
-    print("All features successfully stored:\n", features)
+    print("Extracting feature vector for negative images ..")
+    features_neg = feature_vec(dataset_neg, model)
+    features_neg = np.vstack(features_neg)
 
-    df_copy['image'] = features.tolist() 
+    print("All features successfully stored:\n", features_pos)
+
+    df_copy['image_1'] = features_pos.tolist() 
+    df_copy['image_2'] = features_neg.tolist() 
 
     # Specify the folder path and file name
-    # folder_path = os.path.join(os.getcwd(), "Features-Dataset_2")
-    file_name = "features_dataset_2.csv"
-    file_path = os.path.join(os.getcwd(), file_name)
+    folder_path = os.path.join(os.getcwd(), "Dataset_1/Features-Datasets")
+    file_name = "features_dataset_3_(20).csv"
+    file_path = os.path.join(folder_path, file_name)
+
+    # Check if the folder exists, if not, create it
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
 
     # Save the DataFrame to the specified file path
     df_copy.to_csv(file_path, index=False)
@@ -154,3 +169,7 @@ if __name__ == "__main__":
     print("* Saving New Databse * ")
     print("=======================")
     print(f"File saved to: {file_path} as {file_name}")
+
+    # Save the updated DataFrame to a new CSV
+    # df_copy.to_csv('features_dataset_1.csv', index=False)
+    # print("Dataframe store as features_dataset_1.csv")
