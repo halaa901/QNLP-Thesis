@@ -1,13 +1,20 @@
-# Project Title
+# Multimodal Quantum Natural Language Processing: A Novel Framework for Using Quantum Methods to Analyse Real Data
 
-A brief description of what this project does and who it's for.
+This project is part of a thesis submitted in partial fulfilment of the requirements for the degree of Master of Science in Emerging Digital Technologies, University College London.
 
 ## Table of Contents
 
-..
+- [Overview](#overview)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Libraries Used](#libraries-used)
+- [Usage](#usage)
+  - [Dataset 1 (Unstructured)](#dataset-1-unstructured)
+  - [Dataset 2 (Structured)](#dataset-2-structured)
+
+
 ## Overview
-..
-Provide a brief introduction to your project here. Explain the goals, the scope, and what this project achieves.
+The project focuses on developing a framework for multimodal quantum natural language processing (QNLP) using quantum methods to analyse real data, particularly integrating image and text classification tasks.
 
 ## Requirements
 
@@ -77,9 +84,9 @@ The project consists of two datasets:
 
 3. **Model Training and Testing**:
     - The `circuit2.ipynb` script also handles the execution of string diagrams, quantum circuit representations, and runs the models for training and testing.
-    - The results are saved in the `output_2` folder.
+    - The results are saved in the `Output_2` folder.
+  
+## Results
 
-## File Structure
-...
-Outline the structure of your project folder to help users understand the organization.
+The results of the experiments are stored in the `Dataset_1/Outputs` and `Dataset_2/Output_2` folders. For each model, accuracy and loss metrics were recorded to evaluate performance. The detailed results and performance metrics can be found in these respective folders.
 
